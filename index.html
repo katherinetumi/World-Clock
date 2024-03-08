@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>🕒 World Clock by itumeleng kolwane 🕒</title>
+    <link rel="icon" href="/src/Portfolio logo.png" type="image/x-icon" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.37/moment-timezone-with-data-1970-2030.min.js"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="src/styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>🌏 World Clock 🌎</h1>
+      <select id="city">
+        <option value="">Select a city...</option>
+        <option value="current">Current location </option>
+        <option value="America/Vancouver">Vancouver 🇨🇦</option>
+        <option value="America/Buenos_Aires">Buenos Aires 🇦🇷</option>
+        <option value="Atlantic/Reykjavik">Reykjavik 🇮🇸</option>
+        <option value="Africa/Nairobi">Nairobi 🇰🇪</option>
+        <option value="Asia/Dubai">Dubai 🇦🇪</option>
+        <option value="Asia/Kathmandu">Kathmandu 🇳🇵</option>
+        <option value="Asia/Singapore">Singapore 🇸🇬</option>
+        <option value="Asia/Tokyo">Tokyo 🇯🇵</option>
+        <option value="Pacific/Auckland">Auckland 🇳🇿</option>
+      </select>
+      <div id="cities">
+        <div class="row" id="los-angeles">
+          <div class="col-6 city">
+            <h2>Los Angeles 🇺🇸</h2>
+            <div class="los-angeles-date"></div>
+          </div>
+          <div class="col-6">
+            <span class="los-angeles-time"></span>
+            <small class="los-angeles-time-reference"></small>
+          </div>
+        </div>
+        <div class="row" id="rome">
+          <div class="col-6 city">
+            <h2>Rome 🇮🇹</h2>
+            <div class="rome-date"></div>
+          </div>
+          <div class="col-6">
+            <span class="rome-time"></span>
+            <small class="rome-time-reference"></small>
+          </div>
+        </div>
+        <div class="row" id="bangkok">
+          <div class="col-6 city">
+            <h2>Bangkok 🇹🇭 </h2>
+            <div class="bangkok-date"></div>
+          </div>
+          <div class="col-6">
+            <span class="bangkok-time"></span>
+            <small class="bangkok-time-reference"></small>
+          </div>
+        </div>
+        <div class="row" id="fiji">
+          <div class="col-6 city">
+            <h2>Fiji 🇫🇯 </h2>
+            <div class="fiji-date"></div>
+          </div>
+          <div class="col-6">
+            <span class="fiji-time"></span>
+            <small class="fiji-time-reference"></small>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      Coded by <strong>itumeleng katherine kolwane</strong> and open-sourced on
+      <a href="#""
+        >GitHub</a>
+    </footer>
+    <script src="src/index.js"></script>
+  </body>
+</html>
